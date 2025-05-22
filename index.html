@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta character set to ensure proper encoding of special characters -->
+    <meta charset="UTF-8">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>ReThink Waste</title>
+    <!-- Linking to the external CSS file to style the page -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Header Section -->
+      <header>
+        <a href="index.html">
+          <img src="images/Recycle_Banner.png" alt="ReThink Waste logo" width="155" height="61">
+        </a>
+        <h1>ReThink Waste</h1>
+      </header>
+      <!-- Navigation Section -->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="materials.html">Materials</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main Content Wrapper with Side Padding -->
+      <div class="main-content-wrapper">
+        <main>
+          <!-- Main Content -->
+          <h2>Welcome to ReThink Waste</h2>
+          <p>
+            <strong>ReThink Waste</strong> is more than just a website—it's a movement to change the way we view everyday waste. Our platform is designed to engage and educate people of all ages on the value of sustainable living. Through easy-to-follow tutorials, material guides, and creative ideas, we help you turn ordinary waste into extraordinary solutions.
+          </p>
+          <!-- Create a container for the left and right aligned sections -->
+          <div class="main-flex-container">
+            <!-- REDUCE Section (starts from the middle, aligned to the left) -->
+            <section class="content-section content-left middle-section-left">
+              <img src="images/reduce_screenshot.png" width="75" height="100" alt="This is a logo for you to Reduce">
+              <h3>🌱 REDUCE: Cut Waste at the Source</h3>
+              <p>Reducing plastic waste is vital for protecting the environment. By choosing reusable items like bags, bottles, and eco-friendly packaging, we can cut down on single-use plastics. Supporting recycling and sustainable production methods also helps minimize waste. Small changes in our habits can make a big difference in tackling plastic pollution.</p>
+            </section>
+            <!-- REUSE Section (starts from the middle, aligned to the right) -->
+            <section class="content-section content-right middle-section-right">
+              <img src="images/reuse_screenshot.png" width="75" height="100" alt="This is a logo for you to Reuse">
+              <h3>🔁 REUSE: Give Materials a Second Life</h3>
+              <p>Reusing items is an effective way to reduce waste and conserve resources. By repurposing products like glass jars, fabric bags, or old clothes, we can extend their lifespan and reduce the need for new materials. Reuse helps lessen the demand for manufacturing, saving energy and decreasing pollution. Simple actions, such as fixing items instead of discarding them, can significantly contribute to a more sustainable and resource-efficient lifestyle.</p>
+            </section>
+          </div>
+          <p style="color: green;">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+          <!-- Recycle Section (Centered) -->
+          <section class="content-section content-center">
+            <img src="images/recycle_screenshot.png" width="75" height="100" alt="This is a logo for you to Recycle">
+            <h3>♻️ RECYCLE: Close the Loop</h3>
+            <p>Recycling is an essential practice for reducing waste and conserving natural resources. By processing materials like paper, glass, and metal, we can turn them into new products, reducing the need for raw materials and cutting down on landfill waste. Recycling helps save energy, lowers pollution, and reduces the environmental impact of manufacturing. It's a simple yet powerful way to support a more sustainable and circular economy.</p>
+          </section>
+          <!-- What You'll Discover Section (Centered) -->
+          <section class="content-section content-center">
+            <h3>✨ What You'll Discover on ReThink Waste</h3>
+            <ul>
+              <li>Step-by-step upcycling tutorials</li>
+              <li>Material knowledge</li>
+              <li>Tips for reducing waste</li>
+              <li>Inspiration to take action</li>
+            </ul>
+            <p>ReThink Waste empowers you to take simple, impactful steps toward a more sustainable lifestyle.</p>
+          </section>
+        </main>
+      </div>
+      <!-- Footer Section -->
+      <footer>
+        <ul>
+          <li>&copy; ReThink Waste</li>
+          <li>
+            <a href="mailto:info@rethinkwaste.com">info@rethinkwaste.com</a>
+          </li>
+          <li>Urban/Suburban Australia</li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Add JavaScript for Active Link Highlighting -->
+    <script>
+      // Get the current page URL
+      const currentPage = window.location.pathname.split('/').pop();
+      // Get all navigation links
+      const navLinks = document.querySelectorAll('nav a');
+      // Loop through each link and add the "active" class if the link's href matches the current page
+      navLinks.forEach(link => {
+        if (link.href.includes(currentPage)) {
+          link.classList.add('active');
+        }
+      });
+    </script>
+  </body>
+</html>

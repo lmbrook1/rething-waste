@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #211d1c;
+	margin: 0;
+	overflow-x: hidden;
+	/* Prevent horizontal scrolling */
+	background-color: white;
+	/* White background for the page */
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	/* Stack header, nav, and content vertically */
+	min-height: 100vh;
+	/* Make the wrapper full height */
+	width: 100%;
+}
+
+/* HEADER */
+header {
+	background: #2f261d url(images/recycle\ banner\ page.jpg) no-repeat center center;
+	background-size: cover;
+	height: 430px;
+	/* Adjust header height */
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	/* Removed fixed positioning */
+}
+
+/* NAVIGATION */
+nav {
+	background-color: rgba(0, 0, 0, 0.65);
+	position: sticky;
+	/* Now sticks to top on scroll */
+	top: 0;
+	width: 100%;
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	/* Ensure nav stays on top of content */
+	margin-top: 0;
+	/* No offset needed anymore */
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 15px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+nav a:hover {
+	background-color: #356d81;
+}
+
+nav span {
+	padding: 10px 20px;
+	background-color: #356d81;
+	color: white;
+}
+
+/* Active link style */
+nav a.active {
+	background-color: #356d81;
+	color: white;
+}
+
+/* MAIN CONTENT WRAPPER */
+.main-content-wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* MAIN CONTENT */
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	overflow-y: auto;
+	max-width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-top: 20px;
+	/* Added buffer space below sticky nav */
+}
+
+/* Content Section */
+.content-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 0;
+	width: 48%;
+	max-width: 1000px;
+	box-sizing: border-box;
+}
+
+.content-section img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Flex layout for left and right sections */
+.main-flex-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+/* To start from the middle */
+.middle-section-left {
+	position: relative;
+	left: 40%;
+	/* shifted 10% left */
+	transform: translateX(-100%);
+}
+
+.middle-section-right {
+	position: relative;
+	right: 35%;
+	/* shifted 10% right */
+	transform: translateX(100%);
+}
+
+/* Centered Content - Only for Recycle section */
+.content-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+/* FOOTER */
+footer {
+	font-size: 0.8em;
+	background-color: #211d1c;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	list-style: none;
+	padding-right: 20px;
+}
